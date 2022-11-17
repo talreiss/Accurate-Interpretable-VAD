@@ -1,5 +1,5 @@
 ## Interpretable_VAD
-Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection".
+Official Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection".
 
 [\[arXiv\]]()
 
