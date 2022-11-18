@@ -129,6 +129,5 @@ if __name__ == '__main__':
     parser.add_argument("--dataset_name", type=str, default="ped2", help='dataset name')
     parser.add_argument("--sigma", type=int, default=3, help='sigma for gaussian1d smoothing')
     args = parser.parse_args()
-    # root = 'data/'
-    root = '/cs/labs/yedid/talreiss/Datasets/Video'
+    root = 'data/'
     evaluate(args, root)
