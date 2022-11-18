@@ -1,7 +1,5 @@
 ## Interpretable_VAD
-Official Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection".
-
-[\[arXiv\]]()
+Official Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection". [\[arXiv\]]()
 
 ![interpretable VAD](./figures/interpretability.png)
 
@@ -35,8 +33,9 @@ python score_calibration.py [--dataset_name]
 ### 2.4 Evaluation
 Finally, you can evaluate by running the following command:
 ```
-python evaluate.py [--dataset_name]
+python evaluate.py [--dataset_name] [--sigma]
 ```
+We usually use --sigma=3 for Ped2 and Avenue, and --sigma=7 for ShanghaiTech
 
 You can download our set of representations for Ped2, Avenue and ShanghaiTech datasets from [here](https://drive.google.com/drive/folders/1vSMpDb5jIyc2tNJaYVphguUlFcwPayms?usp=sharing).
 
