@@ -8,7 +8,11 @@ Official Implementation of "Attribute-based Representations for Accurate and Int
 python==3.7
 torch==1.12.0+cu102
 ```
-
+This repo uses github Large File Storage. Therefore, after cloning the repository, run the following command to download the pose representations:
+```
+git lfs pull
+```
+Alternatively, download ```./data/shanghaitech/train/pose.npy``` manually and place it in the same path (195 MB npy file).
 ## 2. Usage
 ### 2.1 Data download and Preparation
 To download the evaluation datasets, please follow the [instructions](./data/README.md).
@@ -35,15 +39,15 @@ Finally, you can evaluate by running the following command:
 ```
 python evaluate.py [--dataset_name] [--sigma]
 ```
-We usually use --sigma=3 for Ped2 and Avenue, and --sigma=7 for ShanghaiTech
+We usually use ```--sigma=3``` for Ped2 and Avenue, and ```--sigma=7``` for ShanghaiTech.
 
 You can download our set of representations for Ped2, Avenue and ShanghaiTech datasets from [here](https://drive.google.com/drive/folders/1vSMpDb5jIyc2tNJaYVphguUlFcwPayms?usp=sharing).
 
 ## 3. Results
 
-|     Model      | UCSD Ped2 | CUHK Avenue | ShanghaiTech |
-| :------------: |:---------:|:-----------:|:------------:|
-|    HF2-VAD     |   99.1%   |    93.3%    |    85.9%     |
+| UCSD Ped2 | CUHK Avenue | ShanghaiTech |
+|:---------:|:-----------:|:------------:|
+|   99.1%   |    93.6%    |    85.9%     |
 
 
 ## Citation

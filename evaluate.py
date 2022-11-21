@@ -63,7 +63,7 @@ def evaluate(args, root):
 
     min_deep_features = np.min(train_deep_features_scores)
     max_deep_features = np.max(train_deep_features_scores)
-    max_deep_features = np.percentile(train_deep_features_scores, 99.9)
+    # max_deep_features = np.percentile(train_deep_features_scores, 99.9)
 
     min_pose = np.min(train_pose_scores)
     max_pose = np.percentile(train_pose_scores, 99.9)
