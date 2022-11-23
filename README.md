@@ -1,5 +1,5 @@
 ## Interpretable_VAD
-Official Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection". [\[arXiv\]]()
+Official PyTorch Implementation of "Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection". [\[arXiv\]]()
 
 ![interpretable VAD](./figures/interpretability.png)
 
