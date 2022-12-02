@@ -1,5 +1,12 @@
-## Interpretable_VAD
-Official PyTorch Implementation of [**"Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection"**](). 
+## Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection
+
+Official PyTorch Implementation of [**"Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection"**](https://arxiv.org/pdf/2212.00789.pdf). 
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/attribute-based-representations-for-accurate/anomaly-detection-on-shanghaitech)](https://paperswithcode.com/sota/anomaly-detection-on-shanghaitech?p=attribute-based-representations-for-accurate)
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/attribute-based-representations-for-accurate/anomaly-detection-on-chuk-avenue)](https://paperswithcode.com/sota/anomaly-detection-on-chuk-avenue?p=attribute-based-representations-for-accurate)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/attribute-based-representations-for-accurate/abnormal-event-detection-in-video-on-ucsd)](https://paperswithcode.com/sota/abnormal-event-detection-in-video-on-ucsd?p=attribute-based-representations-for-accurate)
 
 ![interpretable VAD](./figures/interpretability.png)
 
