@@ -60,5 +60,10 @@ You can download our set of representations for Ped2, Avenue and ShanghaiTech da
 ## Citation
 If you find this useful, please cite our paper:
 ```
-
+@article{reiss2022attribute,
+  title={Attribute-based Representations for Accurate and Interpretable Video Anomaly Detection},
+  author={Reiss, Tal and Hoshen, Yedid},
+  journal={arXiv preprint arXiv:2212.00789},
+  year={2022}
+}
 ```
