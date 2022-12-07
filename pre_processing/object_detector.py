@@ -1,6 +1,7 @@
 import torch
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
+from detectron2.config import get_cfg
 
 class Predictor:
     def __init__(self, confidence_threshold=0.5):
