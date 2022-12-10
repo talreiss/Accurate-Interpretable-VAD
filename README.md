@@ -15,11 +15,7 @@ Official PyTorch Implementation of [**"Attribute-based Representations for Accur
 python==3.7
 torch==1.12.0+cu102
 ```
-This repo uses github Large File Storage. Therefore, after cloning the repository, run the following command to download the pose representations:
-```
-git lfs pull
-```
-Alternatively, download ```./data/shanghaitech/train/pose.npy``` manually and place it in the same path (195 MB npy file).
+Download this [file](https://drive.google.com/file/d/1fxMmmZ8TmmdGOovbC2QYPgWTaRxyVdE0/view?usp=sharing) (195 MB npy file) and place it in the following path: ```./data/shanghaitech/train/pose.npy```.
 ## 2. Usage
 ### 2.1 Data download and Preparation
 To download the evaluation datasets, please follow the [instructions](./data/README.md).
