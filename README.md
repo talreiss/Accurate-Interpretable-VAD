@@ -12,25 +12,21 @@ Official PyTorch Implementation of [**"Attribute-based Representations for Accur
 
 ## 1. Dependencies
 ```
-python==3.7
-torch==1.12.0+cu102
+python -m venv venv 
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 Download this [file](https://drive.google.com/file/d/1fxMmmZ8TmmdGOovbC2QYPgWTaRxyVdE0/view?usp=sharing) (195 MB npy file) and place it in the following path: ```./data/shanghaitech/train/pose.npy```.
+
 ## 2. Usage
 ### 2.1 Data download and Preparation
 To download the evaluation datasets, please follow the [instructions](./data/README.md).
 
-### 2.2 Data preparation
-The training and testing datasets should be preprocessed according to the these [instructions](./pre_processing/README.md).
-
-### 2.3 Feature Extraction
+### 2.2 and 2.3 Data preparation and Feature Extraction 
 For extracting velocity and deep representations, run the following command:
-
 ```
-python feature_extraction.py [--dataset_name]
+sh data_preprocessing.sh
 ```
-
-Pose representations have already been provided by us.
 
 ### 2.4 Score calibration
 To compute calibration parameters for each representation, run the following command:
