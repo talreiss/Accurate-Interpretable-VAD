@@ -69,6 +69,9 @@ def get_foreground(img, bboxes, patch_size):
         img_patches = np.array(img_patches)
     return img_patches  # [num_bboxes, frames_num, C, patch_size, patch_size]
 
+def sort_file_names(frame_name):
+    frame_name = int(frame_name.split('/')[-1].split('.')[0])
+    return frame_name
 
 class VideoDataset(Dataset):
     def __init__(self, dataset_name, root, train=True, sequence_length=0, mode="last",
@@ -103,7 +106,7 @@ class VideoDataset(Dataset):
             self.videos[i] = {}
             self.videos[i]['path'] = video_path
             self.videos[i]['frames'] = glob.glob(os.path.join(video_path, '*.jpg'))
-            self.videos[i]['frames'].sort()
+            self.videos[i]['frames'].sort(key=sort_file_names)
             self.frame_addresses += self.videos[i]['frames']
             self.videos[i]['length'] = len(self.videos[i]['frames'])
             self.frame_video_idx += [i] * self.videos[i]['length']
@@ -300,7 +303,7 @@ class VideoDatasetWithFlows(Dataset):
             self.flows[i] = {}
             self.flows[i]['path'] = video_path
             self.flows[i]['frames'] = glob.glob(os.path.join(video_path, '*.npy'))
-            self.flows[i]['frames'].sort()
+            self.flows[i]['frames'].sort(key=sort_file_names)
             self.frame_addresses_flows += self.flows[i]['frames']
             self.flows[i]['length'] = len(self.flows[i]['frames'])
 
@@ -309,7 +312,7 @@ class VideoDatasetWithFlows(Dataset):
             self.videos[i] = {}
             self.videos[i]['path'] = video_path
             self.videos[i]['frames'] = glob.glob(os.path.join(video_path, '*.jpg'))
-            self.videos[i]['frames'].sort()
+            self.videos[i]['frames'].sort(key=sort_file_names)
             self.frame_addresses += self.videos[i]['frames']
             self.videos[i]['length'] = len(self.videos[i]['frames'])
             self.frame_video_idx += [i] * self.videos[i]['length']
